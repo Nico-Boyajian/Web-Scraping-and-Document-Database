@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='styles/index.css')}}">
+</head>
+
+<body>
+    
+        <div class="container">
+            <!-- Jumbotron -->
+            <div class="jumbotron text-center" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a6/PIA22460-Mars2020Mission-Helicopter-20180525.jpg); height: 400px; background-position: center; background-size: cover;">
+                <h1 id="Web_Head"><b>Mission to Mars</b></h1>
+                <p><a class="btn btn-danger btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+            </div>
+        </div>
+
+    
+    <!-- News Section -->
+    <div class="container">
+        <div class="row">
+            <div class = 'col-lg-8 col-md-8 col-sm-12 mars_news'>
+                <h1>Latest Mars News</h1>
+                <h2>{{mars_info.news_title}}</h2>
+                <p>{{mars_info.news_text}}</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class = "container">
+        <div class = "row">
+            <div class="col-lg-8 col-md-8 col-sm-12 featured">
+                <h1>Featured Mars Image</h1>
+                <img src="{{mars_info.featured_url}}" style="max-width:100%; max-height: auto;" alt="Mars Featured Image">
+            </div> 
+        
+    
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class = 'weather'>
+                            <h6>Current Weather on Mars</h6>
+                            <p>{{mars_info.weather}}</p>
+                </div>
+                <br>
+                <div class = "facts">
+                    <h3>Mars Facts</h3>
+                        <div style="max-width: 450px; max-height: 150px; font-size: 15px; margin-bottom: 65px;">
+                                <p>{{mars_info.facts|safe}}</p>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class = "container hemispheres">
+        <div class ="row">
+            <br>
+            <h1>Mars Hemispheres</h1>
+            <div class = 'col-lg-6 col-md-3 col-sm-12'>
+                <h2>{{mars_info.image[0]}}</h2>
+                <img src="{{mars_info.url[0]}}" style="max-width:100%; max-height: auto;" alt="Hemisphere">
+            </div>
+            <div class = 'col-lg-6 col-md-3 col-sm-12'>
+                <h2>{{mars_info.image[1]}}</h2>
+                <img src="{{mars_info.url[1]}}" style="max-width:100%; max-height: auto;" alt="Hemisphere 1">
+            </div>
+        </div>
+        <div class ="row">
+                <div class = 'col-lg-6 col-md-3 col-sm-12'>
+                    <h2>{{mars_info.image[2]}}</h2>
+                    <img src="{{mars_info.url[2]}}" style="max-width:100%; max-height: auto;" alt="Hemisphere">
+                </div>
+                <div class = 'col-lg-6 col-md-3 col-sm-12'>
+                    <h2>{{mars_info.image[3]}}</h2>
+                    <img src="{{mars_info.url[3]}}" style="max-width:100%; max-height: auto;" alt="Hemisphere 1">
+                </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,79 @@
+
+.heading {
+    background-image: url(https://singularityhub.com/wp-content/uploads/2019/07/NASA-artist-perspective-first-humans-on-mars-space-1068x601.jpg);
+    background-size: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.mars_news {
+    color: black;
+    border-style: solid;
+    border-width: thin;
+    background: lightskyblue;
+}
+
+.mars_news h1 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.mars_news h2{
+    text-decoration: underline;
+}
+.mars_news p {
+    font-size: 18px;
+}
+
+.featured h1 {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.weather {
+    color: black;
+    border-style: solid;
+    border-width: thin;
+    padding: 5px;
+    background: lightskyblue;
+}
+.weather h6 {
+    text-align: center;
+    text-decoration: underline;
+}
+.facts h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.facts p {
+    padding: 2px;
+    text-align: center;
+    color: black;
+    margin: 2px;
+    
+}
+
+.hemispheres {
+    margin-bottom: 25px;
+}
+
+.hemispheres h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.hemispheres h2 {
+
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+

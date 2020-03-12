@@ -9,6 +9,7 @@ import datetime as dt
 
 
 def scrape_all():
+    
 
 
     # Initiate headless driver for deployment
@@ -25,7 +26,7 @@ def scrape_all():
         "weather": twitter_weather(browser),
         "facts": mars_facts(),
         "last_modified": dt.datetime.now()
-        
+
     }
 
     # Stop webdriver and return data

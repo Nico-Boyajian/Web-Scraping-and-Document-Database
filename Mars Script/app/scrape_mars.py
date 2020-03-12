@@ -18,6 +18,7 @@ def scrape_all():
     # Run all scraping functions and store in dictionary.
     data = {
         "news_title": news_title,
+        
         "news_paragraph": news_paragraph,
         "featured_image": featured_image(browser),
         "hemispheres": hemispheres(browser),

@@ -9,8 +9,6 @@ import datetime as dt
 
 
 def scrape_all():
-    
-
 
     # Initiate headless driver for deployment
     browser = Browser("chrome", executable_path="chromedriver", headless=True)
